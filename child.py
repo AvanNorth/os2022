@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import sys
 import os
@@ -9,8 +9,8 @@ import random
 s_time = sys.argv[1]
 s_time = int(s_time)
 
-process_id = os.getpid()
-parent_process_id = os.getppid()
+child_proc_id = os.getpid()
+parent_proc_id = os.getppid()
 
 print(f"Child [{chld_proc_id}] started. PID {chld_proc_id}. Parent PID {parent_proc_id}")
 time.sleep(s_time)
